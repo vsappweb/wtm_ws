@@ -1,0 +1,24 @@
+{
+  "name": "world_trail_map-socket",
+  "version": "0.2.0",
+  "description": "",
+  "homepage": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "author": "V.Sirenko",
+  "contributors": [
+    "V.Sirenko",
+    "A.Datsenko"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.7",
+    "socket.io": "^4.8.1",
+    "ws": "^8.18.0"
+  }
+}
