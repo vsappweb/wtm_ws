@@ -8,7 +8,7 @@ dotenv.config();
 const wss = new ws.Server(
   {
     port: ws_port,
-    cors: { origin: "*" },
+    cors: { origin: cors_env },
   },
   () => {
     if (wss) {
@@ -46,8 +46,6 @@ wss.on("connection", (ws) => {
 
 function broadcastMessage(message) {
   wss.clients.forEach((client) => {
-    // if (client.readyState === wss.OPEN) {
       client.send(JSON.stringify(message));
-    // }
   });
 }
